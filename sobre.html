@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         METADADOS GLOBAIS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Conheça a história, os objetivos e a identidade cultural do Coletivo Tocaya.">
+
+    <title>Sobre - Tocaya</title>
+
+    <!-- Favicon global do projeto -->
+    <link rel="icon"
+          type="image/png"
+          href="imagens/icon-tocaya.png">
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+         Responsável por importar todos os módulos
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body id="topo">
+
+
+    <!-- =====================================================
+         CABEÇALHO GLOBAL
+    ====================================================== -->
+
+    <header
+        role="banner"
+        class="cabecalho-site"
+    >
+
+        <section class="container header-container">
+
+            <!-- Identidade visual -->
+
+            <section class="logo-container">
+
+                <img
+                    src="imagens/logo-tocaya.png"
+                    alt="Logotipo Tocaya"
+                    class="logo-imagem"
+                >
+
+                <p class="slogan">
+                    música & movimento
+                </p>
+
+            </section>
+
+            <!-- Navegação principal -->
+
+            <nav
+                class="navegacao-principal"
+                aria-label="Menu principal"
+            >
+
+                <ul class="menu-lista">
+
+                    <li class="menu-item">
+
+                        <a
+                            href="index.html"
+                            class="menu-link"
+                        >
+                            Início
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="sobre.html"
+                            class="menu-link"
+                            aria-current="page"
+                        >
+                            Sobre
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="agenda.html"
+                            class="menu-link"
+                        >
+                            Agenda
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="projetos.html"
+                            class="menu-link"
+                        >
+                            Projetos
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="registros.html"
+                            class="menu-link"
+                        >
+                            Registros
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="midia.html"
+                            class="menu-link"
+                        >
+                            Mídia
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="contato.html"
+                            class="menu-link"
+                        >
+                            Contato
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+         História e identidade do coletivo
+         Djs Residentes
+    ====================================================== -->
+
+    <main class="conteudo-principal">
+
+        <!-- Registro fotográfico -->
+        <figure class="imagem-bloco-topo">
+            <img
+                src="imagens/sobre.png"
+                alt="Público em evento cultural do Coletivo Tocaya."
+                class="imagem-conteudo-topo"
+            >
+            <figcaption class="imagem-legenda">
+                Festa Tocaya em sua 6ª edição, realizada em 2018,
+                em Araraquara (SP).
+            </figcaption>
+        </figure>
+
+        <!-- Texto institucional: Manifesto Principal -->
+        <article class="texto-manifesto" style="margin-top: var(--espaco-m);">
+
+            <h1>Sobre a Tocaya</h1>
+
+            <p>
+                A <strong>Tocaya</strong> é uma festa de música brasileira
+                realizada em Araraquara (SP) desde 2017.
+                A iniciativa celebra a diversidade dos ritmos brasileiros,
+                aproximando tradição e experimentação contemporânea.
+            </p>
+
+            <p>
+                <!-- BOOKMARKS apontando para o ID de cada DJ -->
+                O projeto foi idealizado por 
+                <a href="#dj-micheletti" class="link-artigo">Jônatas Micheletti</a> e 
+                <a href="#dj-roze" class="link-artigo">Nat Rozendo</a>,
+                integrantes do <strong>Coletivo Tocaya</strong>,
+                responsável pela realização de eventos,
+                ações culturais e experiências colaborativas.
+            </p>
+
+            <p style="margin-top: var(--espaco-xs);">
+                <a href="artigos/por-que-coletivo.html" class="link-artigo">
+                    Por que coletivo? &rarr;
+                </a>
+            </p>
+
+        </article>
+
+        <!-- Texto institucional: Apresentação Geral dos DJs -->
+        <article class="texto-manifesto" style="margin-top: var(--espaco-m);">
+
+            <h2>DJs</h2>
+
+            <p>
+                Um dos principais objetivos do Coletivo Tocaya é divulgar a 
+                cultura DJ no interior de São Paulo, tornando-a acessível ao 
+                público por apresentá-la numa linguagem familiar e inteligível 
+                (no caso, música brasileira) e em situações recreativas (como 
+                eventos em locais públicos ou festas fechadas com entrada de 
+                baixo custo), indo além do estereótipo de que DJs só tocam música 
+                eletrônica ou se alienam em determinados estilos de música. 
+            </p>
+
+            <p>
+                Celebrando a diversidade de gêneros e ritmos da música brasileira, 
+                o coração musical da Tocaya bate forte sob o comando dos DJs 
+                residentes Roze e Micheletti. 
+            </p>
+
+        </article>
+
+            <!-- REQUISITO 5: Bookmarks -->
+        
+        <!-- BIOGRAFIA DJ ROZE -->
+        <article class="texto-manifesto container-bio-dj" id="dj-roze">
+            
+            <!-- O título fica no topo ocupando 100% da largura -->
+            <h3 class="dj-titulo-topo">DJ Roze</h3>
+
+            <!-- Nova caixa unificada para controlar o lado a lado -->
+            <div class="bio-conteudo bio-esquerda">
+                <figure class="dj-midia-bloco">
+                    <img src="imagens/roze.jpg" alt="Fotografia de perfil de Nat Rozendo (DJ Roze)">
+                    <figcaption class="imagem-legenda">Foto de Lívia Terra</figcaption>
+                
+                    <!-- Player SoundCloud -->
+                    <iframe
+                        title="Player SoundCloud DJ Roze"
+                        width="100%" 
+                        height="120" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/roze_nat/sets/mix-da-roze?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Froze_nat%252Fsets%252Fmix-da-roze&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
+                    </iframe>
+
+                </figure>
+
+                <div class="dj-texto-bloco">
+                    <p>
+                    Produtora de festas e eventos desde 2016, Roze (Nat Rozendo) atua como 
+                    DJ na região de Araraquara (SP) desde 2019. Mesclando música brasileira
+                    e eletrônica, traz em seus sets batuques marcantes, graves expressivos 
+                    e vozes poderosas, mixando ritmos quentes da música tropical brasileira
+                    para aquecer o coração de quem estiver ouvindo.
+                    </p>
+                    <p style="margin-top: var(--espaco-xs);">
+                    Além disso, Nat é designer e também se dedica à produção artística em 
+                    comunicação gráfica e desenvolvimento de identidade visual.
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- BIOGRAFIA DJ MICHELETTI -->
+        <article class="texto-manifesto container-bio-dj" id="dj-micheletti">
+
+            <!-- O título fica no topo ocupando 100% da largura -->
+            <h3 class="dj-titulo-topo">DJ Micheletti</h3>
+            
+            <!-- Nova caixa unificada para controlar o lado a lado (invertido) -->
+            <div class="bio-conteudo bio-direita">
+                <figure class="dj-midia-bloco">
+                    <img src="imagens/micheletti.jpg" alt="Fotografia de perfil de Jônatas Micheletti (DJ Micheletti)">
+                    <figcaption class="imagem-legenda">Foto de Eric Fonseca</figcaption>
+                
+                    <!-- Player SoundCloud -->
+                    <iframe 
+                        title="Player SoundCloud DJ Micheletti"
+                        width="100%" 
+                        height="120" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mmicheletti/sets/mixtapes?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fmmicheletti%252Fsets%252Fmixtapes&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
+                    </iframe>
+                </figure>
+
+                <div class="dj-texto-bloco">
+                    <p>
+                    Produtor de festas e eventos, além de editor de som, Micheletti 
+                    (Jônatas Micheletti) atua como DJ na região de Araraquara (SP) desde 
+                    2015. Sua pesquisa musical é voltada aos ritmos populares brasileiros, 
+                    misturados e remexidos com elementos eletrônicos, e à difusão dessa 
+                    combinação em pistas de dança e junto à comunidade de DJs. Transita e 
+                    vasculha a ampla seara da música tropical brasileira, em busca do 
+                    batuque perfeito e da batida que faz o corpo vibrar.
+                    </p>
+                    <p style="margin-top: var(--espaco-xs);">
+                    Produtor musical amador, Micheletti cria e disponibiliza edits de 
+                    música brasileira desde 2018, em produções que mesclam ritmos, gêneros 
+                    e temperos eletrônicos.
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- =====================================================
+         VOLTAR AO TOPO
+    ====================================================== -->
+
+    <nav
+        class="voltar-topo-container"
+        aria-label="Voltar ao topo"
+    >
+
+        <a
+            href="#topo"
+            class="voltar-topo"
+        >
+            Voltar ao topo
+        </a>
+
+    </nav>
+
+    <!-- =====================================================
+         RODAPÉ GLOBAL
+    ====================================================== -->
+
+    <footer class="rodape-site">
+
+        <section class="rodape-creditos">
+
+            <p>
+                &copy; 2026 Coletivo Tocaya.
+                Todos os direitos reservados.
+            </p>
+
+            <p class="rodape-subtexto">
+                música & movimento
+            </p>
+
+        </section>
+
+        <nav
+            class="rodape-redes"
+            aria-label="Links para redes sociais"
+        >
+
+            <ul class="redes-lista">
+
+                <li>
+
+                    <a
+                        href="https://www.instagram.com/coletivotocaya"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a
+                        href="https://www.youtube.com/tocayatv"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YouTube
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a
+                        href="https://www.facebook.com/coletivotocaya"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </footer>
+
+    <!-- =====================================================
+         VLIBRAS
+         Plugin de acessibilidade para Libras
+    ====================================================== -->
+
+    <div vw
+         class="enabled">
+
+        <div vw-access-button
+             class="active"></div>
+
+        <div vw-plugin-wrapper>
+
+            <div class="vw-plugin-top-wrapper"></div>
+
+        </div>
+
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget(
+            'https://vlibras.gov.br/app'
+        );
+    </script>
+
+</body>
+
+</html>
