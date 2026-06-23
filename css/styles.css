@@ -1,0 +1,41 @@
+/*
+====================================================================
+TOCAYA - ARQUIVO PRINCIPAL
+====================================================================
+
+Organização:
+
+1. Base
+2. Layout
+3. Cabeçalho
+4. Navegação
+5. Conteúdo
+6. Rodapé
+7. Componentes
+8. Responsividade
+====================================================================
+*/
+
+/* 1. Base */
+@import "./base.css";
+
+/* 2. Layout */
+@import "./layout.css";
+
+/* 3. Cabeçalho */
+@import "./header.css";
+
+/* 4. Navegação */
+@import "./navigation.css";
+
+/* 5. Conteúdo */
+@import "./content.css";
+
+/* 6. Rodapé */
+@import "./footer.css";
+
+/* 7. Componentes */
+@import "./components.css";
+
+/* 8. Responsividade */
+@import "./responsive.css";

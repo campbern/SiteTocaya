@@ -1,0 +1,352 @@
+/*
+====================================================================
+BANNER PRINCIPAL
+====================================================================
+
+Área de destaque da página inicial.
+*/
+
+.banner-principal {
+
+    text-align: center;
+
+    padding: var(--espaco-l) 0;
+
+}
+
+/*
+====================================================================
+TÍTULO PRINCIPAL
+====================================================================
+*/
+
+.banner-principal h1 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: var(--espaco-s);
+
+}
+
+/*
+====================================================================
+FRASE DE DESTAQUE
+====================================================================
+
+Slogan exibido abaixo do título principal.
+*/
+
+.frase-destaque {
+
+    font-size: 1.2rem;
+
+    letter-spacing: 0.1rem;
+
+    margin-bottom: var(--espaco-m);
+
+}
+
+/*
+====================================================================
+APRESENTAÇÃO DO COLETIVO
+====================================================================
+
+Seção institucional da página inicial.
+*/
+
+.apresentacao-coletivo {
+
+    padding: var(--espaco-l) 0;
+
+}
+
+/*
+====================================================================
+TÍTULOS DAS SEÇÕES
+- Padrão da página inicial
+- Títulos principais centralizados
+====================================================================
+*/
+
+.apresentacao-coletivo h2 {
+    margin-bottom: var(--espaco-m);
+    text-align: center;
+}
+
+.titulo-secao-centro {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*
+====================================================================
+PARÁGRAFOS E SUBTÍTULOS
+- Variável padrão de espaço
+- Pequenos textos instrucionais cinzas abaixo de um H1/H2
+====================================================================
+*/
+
+.apresentacao-coletivo p {
+    margin-bottom: var(--espaco-s); 
+}
+
+.subtitulo-secao-centro {
+    text-align: center;
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: var(--espaco-m); 
+}
+
+/* 
+====================================================================
+   TEXTOS INSTITUCIONAIS 
+==================================================================== 
+*/
+
+.texto-manifesto {
+    width: 100%;
+    max-width: 650px;    
+    margin: 0 auto;      
+    font-family: sans-serif;
+}
+
+.texto-manifesto p {
+    margin-bottom: var(--espaco-s); 
+    text-align: justify;            
+}
+
+
+/*
+====================================================================
+TÍTULO, SUBTÍTULO E CONTEÚDO DA PÁGINA MÍDIA
+====================================================================
+*/
+
+.titulo-midia {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitulo-midia {
+    text-align: center;
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.conteudo-midia {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* 
+====================================================================
+   PADRONIZAÇÃO DE IMAGENS E LEGENDAS DO TOPO
+==================================================================== 
+*/
+
+.imagem-bloco-topo {
+    width: 100%;
+    max-width: 650px;       
+    margin: 0 auto var(--espaco-m) auto; 
+}
+
+.imagem-conteudo-topo {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;     
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); 
+}
+
+.imagem-legenda {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #666;            
+    text-align: center;     
+    font-style: italic;     
+}
+
+
+/*
+====================================================================
+LINKS DE CONTEÚDO
+====================================================================
+
+Links inseridos dentro dos textos da página.
+*/
+
+.link-artigo {
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+/*
+====================================================================
+HOVER E FOCO
+====================================================================
+*/
+
+.link-artigo:hover,
+.link-artigo:focus {
+
+    color: var(--cor-hover);
+
+}
+
+/*
+====================================================================
+IMAGENS DE CONTEÚDO
+Imagens utilizadas dentro das seções.
+====================================================================
+*/
+
+.imagem-banner,
+.imagem-bloco-topo {
+
+    margin: 0 auto;
+
+}
+
+
+/*
+====================================================================
+   CLIPPING DE IMPRENSA (PÁGINA MÍDIA)
+==================================================================== 
+*/
+
+.materia-midia ul {
+    list-style-type: disc;  /* Garante as bolinhas pretas padrão */
+    padding-left: 20px;     /* Recua a lista para revelar os tópicos */
+    margin-bottom: 20px;
+}
+
+.materia-midia li {
+    margin-bottom: 12px;    /* Afasta um link do outro para facilitar o clique */
+}
+
+.materia-midia h2 {
+    margin-top: var(--espaco-m);
+    margin-bottom: var(--espaco-s);
+    color: #222;            /* Cor escura e forte para o ano */
+}
+
+/* ESTILO DOS LINKS DAS REPORTAGENS */
+.materia-midia li a {
+    color: #9e0055;
+    text-decoration: none;  /* Remove o sublinhado padrão inicial */
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* HOVER E FOCO POR TECLADO */
+.materia-midia li a:hover,
+.materia-midia li a:focus {
+    color: #005fcc;         /* Azul padrão de links da web */ 
+    text-decoration: underline; 
+    outline: none;
+}
+
+
+/* 
+====================================================================
+   ESTILIZAÇÃO DA AGENDA
+==================================================================== 
+*/
+
+.agenda-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: var(--espaco-s);
+}
+
+.evento h2 {
+    margin-top: var(--espaco-m);
+    margin-bottom: var(--espaco-xs);
+}
+
+.evento li {
+    margin-bottom: 6px;
+}
+
+
+/* 
+====================================================================
+   ESTILIZAÇÃO DA TABELA DE PRODUTOS
+==================================================================== 
+*/
+
+.tabela-loja {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-loja th {
+    background-color: #222;
+    color: white;
+    padding: 14px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.tabela-loja td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+}
+
+.tabela-loja tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* MINIATURAS DAS IMAGENS */
+
+.img-miniatura {
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.img-miniatura:hover {
+    transform: scale(1.08);
+}
+
+
+/* 
+====================================================================
+   LINKS INTERNOS 
+==================================================================== 
+*/
+
+.link-artigo {
+    color: #9e0055; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* hover e foco */
+.link-artigo:hover,
+.link-artigo:focus {
+    color: #005fcc; /* azul padrão */
+    text-decoration: underline;
+    outline: none;
+}

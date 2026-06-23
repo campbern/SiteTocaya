@@ -1,0 +1,377 @@
+/*
+====================================================================
+BOTÃO PRINCIPAL
+====================================================================
+*/
+
+.botao-conhecer {
+    display: inline-block;
+    margin-top: var(--espaco-m);
+    padding: 0.8rem 1.5rem;
+    
+    background-color: var(--cor-texto); 
+    color: var(--cor-fundo);
+    
+    border: 1px solid transparent; /* Evita quebra de layout ao focar */
+    border-radius: 4px;
+    font-size: 0.95em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/*
+====================================================================
+HOVER 
+O botão inverte as cores de forma suave ao passar o mouse
+====================================================================
+*/
+
+.botao-conhecer:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-color: var(--cor-texto);
+}
+
+/*
+====================================================================
+FOCO POR TECLADO
+Navegação por Tab
+====================================================================
+*/
+
+.botao-conhecer:focus {
+    outline: 3px solid #005fcc;   /* Cria uma linha azul nítida ao selecionar com Tab */
+    outline-offset: 2px;          /* Afasta a linha azul para ficar bem visível */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-color: var(--cor-texto);
+}
+
+
+/*
+====================================================================
+CARROSSEL
+Galeria de imagens da página inicial.
+====================================================================
+*/
+
+.carrossel-section {
+    margin-top: var(--espaco-l);
+}
+
+/*
+====================================================================
+TÍTULO DO CARROSSEL
+====================================================================
+*/
+
+.carrossel-section h2 {
+    text-align: center;
+    margin-bottom: var(--espaco-m);
+}
+
+/*
+====================================================================
+CONTAINER DAS IMAGENS
+====================================================================
+*/
+
+.carrossel-container {
+    display: flex;
+    gap: var(--espaco-s);
+    overflow-x: auto;
+}
+
+/*
+====================================================================
+IMAGENS DO CARROSSEL
+====================================================================
+*/
+
+.carrossel-imagem {
+    flex: 0 0 auto;
+    border-radius: 4px;
+}
+
+/*
+====================================================================
+VOLTAR AO TOPO
+Navegação auxiliar disponível ao final da página.
+====================================================================
+*/
+
+.voltar-topo-container {
+    text-align: center;
+    margin: var(--espaco-l) 0;
+}
+
+/*
+====================================================================
+LINK VOLTAR AO TOPO 
+====================================================================
+*/
+
+.voltar-topo {
+    display: inline-block;
+    padding: 0.8rem 1.5rem; 
+    
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
+    
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/*
+====================================================================
+HOVER E FOCO DO VOLTAR AO TOPO
+====================================================================
+*/
+
+.voltar-topo:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-color: var(--cor-texto);
+}
+
+.voltar-topo:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-color: var(--cor-texto);
+}
+
+
+/*
+====================================================================
+REPRODUTOR DE VÍDEO NATIVO (TOCAYA ZYNE)
+====================================================================
+*/
+
+.midia-video {
+    display: block !important;
+    width: 100% !important;
+    max-width: 650px !important;   
+    height: auto !important;        
+    margin: var(--espaco-m) auto !important; 
+    border-radius: 8px;             
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); 
+    outline: none;
+}
+
+/* Foco azul acessível ao selecionar os controles com a tecla Tab */
+.midia-video:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+
+/* 
+=====================================================
+FORMULÁRIO DE CONTATO 
+===================================================== 
+*/
+
+/* Box externo do formulário */
+.formulario-contato {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--cor-fundo);
+    border: 1px solid #e0e0e0; /* Mesma borda sutil das linhas da tabela */
+    border-radius: 8px;        /* Mesmo arredondamento da tabela */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Mesma sombra paralela */
+    box-sizing: border-box;
+}
+
+/* Espaçamento vertical entre cada bloco de pergunta */
+.campo-formulario {
+    margin-bottom: var(--espaco-m);
+    text-align: left;
+}
+
+/* Rótulos */
+.campo-formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+/* Padronização visual das caixas de escrita e seleção */
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.95em;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Linhas idênticas às da tabela */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+.formulario-contato input:hover,
+.formulario-contato select:hover,
+.formulario-contato textarea:hover {
+    border-color: #b0b0b0;
+}
+
+/* FOCO ACESSÍVEL: Destaque azul nítido ao selecionar para digitação */
+.formulario-contato input:focus,
+.formulario-contato select:focus,
+.formulario-contato textarea:focus {
+    outline: none;
+    border-color: #005fcc;
+    box-shadow: 0 0 0 3px rgba(0, 95, 204, 0.2);
+}
+
+
+/* 
+====================================================================
+   POP-UP / CARROSSEL CAMISETAS
+==================================================================== 
+*/
+
+.container-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Ativa a exibição */
+.container-popup:target {
+    display: flex;
+}
+
+.conteudo-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* BOTÕES DOS CONTROLES DO CARROSSEL */
+.controles-carrossel {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-carrossel {
+    padding: 8px 14px;
+    background: #222; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-carrossel:hover {
+    background: #444;
+}
+
+/* Foco acessível nas setas do carrossel */
+.btn-carrossel:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+    background: #444;
+}
+
+.btn-fechar {
+    background: #b30000; 
+    color: white;
+}
+
+.btn-fechar:hover {
+    background: #e60000;
+}
+
+/* Foco acessível no botão fechar */
+.btn-fechar:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+    background: #e60000;
+}
+
+
+/*
+====================================================================
+BIO DOS DJS 
+====================================================================
+*/
+
+.container-bio-dj {
+    display: block !important; 
+    margin-top: var(--espaco-l);
+    width: 100%;
+}
+
+.dj-titulo-topo {
+    margin-top: 0;
+    margin-bottom: var(--espaco-s);
+    color: #222;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border-bottom: 1px solid #e0e0e0;  
+    padding-bottom: 8px;
+}
+
+/* Caixa interna que assume o alinhamento horizontal */
+.bio-conteudo {
+    display: flex !important;
+    gap: var(--espaco-m);
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bio-esquerda {
+    flex-direction: row !important;
+}
+
+.bio-direita {
+    flex-direction: row-reverse !important;
+}
+
+.dj-midia-bloco {
+    flex: 0 0 220px !important; 
+    width: 220px !important;
+    margin: 0 !important;
+    text-align: center;
+}
+
+.dj-midia-bloco img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dj-texto-bloco {
+    flex: 1 !important;
+}

@@ -1,0 +1,115 @@
+/*
+====================================================================
+VARIÁVEIS GLOBAIS
+====================================================================
+
+Centraliza cores, espaçamentos, tipografia e medidas utilizadas
+em todo o projeto.
+*/
+
+:root {
+
+    /* Cores principais */
+    --cor-fundo: #f7f3ec;
+    --cor-texto: #1f1f1f;
+    --cor-destaque: #000000;
+    --cor-hover: #444444;
+
+    /* Espaçamentos */
+    --espaco-xs: 0.5rem;
+    --espaco-s: 1rem;
+    --espaco-m: 2rem;
+    --espaco-l: 4rem;
+
+    /* Largura máxima */
+    --largura-maxima: 1000px;
+
+    /* Tipografia */
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+/*
+====================================================================
+RESET
+====================================================================
+
+Remove margens e preenchimentos padrão dos navegadores.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+====================================================================
+BODY
+====================================================================
+
+Configurações globais da página.
+*/
+
+body {
+
+    font-family: var(--fonte-principal);
+
+    color: var(--cor-texto);
+
+    background-color: var(--cor-fundo);
+
+    line-height: 1.6;
+}
+
+/*
+====================================================================
+ELEMENTOS BÁSICOS
+====================================================================
+*/
+
+strong {
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+====================================================================
+ACESSIBILIDADE
+====================================================================
+
+Oculta visualmente elementos, mantendo leitura por leitores
+de tela.
+*/
+
+.sr-only {
+
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}

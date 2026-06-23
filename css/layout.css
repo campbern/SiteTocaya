@@ -1,0 +1,45 @@
+/*
+====================================================================
+LAYOUT GERAL
+- Define limites de largura e centralização dos blocos principais.
+- Cria um espaçamento generoso entre as seções.
+- Garante que a última seção não tenha margem desnecessária embaixo.
+====================================================================
+*/
+
+.conteudo-principal {
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: 0 var(--espaco-m);
+}
+
+
+.conteudo-principal section {
+    margin-bottom: 60px; 
+}
+
+
+.conteudo-principal section:last-child {
+    margin-bottom: 0;
+}
+
+
+/*
+====================================================================
+CONTAINER GENÉRICO
+====================================================================
+
+Utilizado para centralização de conteúdo.
+*/
+
+.container {
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: 0 var(--espaco-m);
+}

@@ -1,0 +1,68 @@
+/*
+====================================================================
+CABEÇALHO
+====================================================================
+
+Contém a identidade visual do coletivo:
+logo e slogan.
+*/
+
+.cabecalho-site {
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    padding: var(--espaco-m);
+
+}
+
+/*
+====================================================================
+IDENTIDADE VISUAL
+====================================================================
+
+Agrupa logotipo e slogan.
+*/
+
+.logo-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--espaco-s);
+
+}
+
+/*
+====================================================================
+LOGOTIPO
+====================================================================
+*/
+
+.logo-imagem {
+
+    width: 220px;
+
+    height: auto;
+
+}
+
+/*
+====================================================================
+SLOGAN
+====================================================================
+*/
+
+.slogan {
+
+    font-size: 0.95rem;
+
+    letter-spacing: 0.15rem;
+
+    text-transform: lowercase;
+
+}

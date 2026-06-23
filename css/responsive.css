@@ -1,0 +1,297 @@
+/*
+====================================================================
+RESPONSIVIDADE
+====================================================================
+
+Centraliza todos os ajustes para diferentes tamanhos
+de tela.
+
+Organização:
+
+1. Tablets e celulares
+2. Celulares pequenos
+====================================================================
+*/
+
+/*
+====================================================================
+TABLETS E CELULARES
+====================================================================
+
+Ajustes aplicados em telas de até 768px.
+*/
+
+@media (max-width: 768px) {
+
+    /*
+    ================================================================
+    CABEÇALHO
+    ================================================================
+    */
+
+    .cabecalho-site {
+
+        padding: var(--espaco-s);
+
+    }
+
+    .logo-imagem {
+
+        width: 180px;
+
+    }
+
+    /*
+    ================================================================
+    NAVEGAÇÃO
+    ================================================================
+    */
+
+    .menu-lista {
+
+        flex-direction: column;
+
+        gap: var(--espaco-s);
+
+    }
+
+    .menu-item-busca {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .campo-busca {
+
+        max-width: 250px;
+
+    }
+
+    /*
+    ================================================================
+    BANNER
+    ================================================================
+    */
+
+    .banner-principal {
+
+        padding: var(--espaco-m) 0;
+
+    }
+
+    .banner-principal h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .frase-destaque {
+
+        font-size: 1rem;
+
+    }
+
+    /*
+    ================================================================
+    CARROSSEL
+    ================================================================
+    */
+
+    .carrossel-container {
+
+        overflow-x: auto;
+
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .carrossel-imagem {
+
+        width: 280px;
+
+        scroll-snap-align: center;
+
+    }
+
+    /*
+    ================================================================
+    TABELA DE CAMISETAS (CORREÇÃO PARA TELAS MÉDIAS)
+    ================================================================
+    */
+
+    .tabela-loja td:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;       /* Permite que as imagens se organizem se faltar espaço */
+    }
+
+    /*
+    ================================================================
+    CONTEÚDO
+    ================================================================
+    */
+
+    .apresentacao-coletivo {
+
+        padding: var(--espaco-m) 0;
+
+    }
+
+    /*
+    ================================================================
+    RODAPÉ
+    ================================================================
+    */
+
+    .rodape-container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .redes-lista {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+/*
+====================================================================
+CELULARES PEQUENOS
+====================================================================
+*/
+
+@media (max-width: 480px) {
+
+    /*
+    ================================================================
+    TÍTULOS
+    ================================================================
+    */
+
+    .banner-principal h1 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .apresentacao-coletivo h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    /*
+    ================================================================
+    BOTÃO PRINCIPAL
+    ================================================================
+    */
+
+    .botao-conhecer {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    /*
+    ================================================================
+    CARROSSEL
+    ================================================================
+    */
+
+    .carrossel-imagem {
+
+        width: 220px;
+
+    }
+
+    /*
+    ================================================================
+    TABELA DE CAMISETAS (TRANSFORMAÇÃO EM BLOCOS PARA CELULAR)
+    ================================================================
+    */
+
+    .tabela-loja, 
+    .tabela-loja thead, 
+    .tabela-loja tbody, 
+    .tabela-loja th, 
+    .tabela-loja td, 
+    .tabela-loja tr {
+        display: block;    /* Quebra a estrutura rígida de linhas e colunas */
+        width: 100%;
+    }
+
+    .tabela-loja thead {
+        display: none;     /* Oculta os títulos da tabela para economizar espaço na tela pequena */
+    }
+
+    .tabela-loja tr {
+        border-bottom: 2px solid #e0e0e0; /* Cria um divisor elegante entre os modelos */
+        padding: 15px 0;
+    }
+
+    .tabela-loja td {
+        text-align: center;
+        padding: 6px 0;
+        border: none;
+    }
+
+    .tabela-loja td:first-child {
+        font-size: 1.1rem; 
+    }
+
+/*
+================================================
+BIO DOS DJS em celulares
+================================================
+*/
+@media (max-width: 768px) {
+
+    .container-bio-dj {
+        display: block !important;
+        align-items: center;
+    }
+
+    .bio-conteudo {
+        flex-direction: column !important;
+        align-items: center;
+        gap: var(--espaco-s) !important;
+    }
+
+    /* Remove inversão no mobile */
+    .bio-direita {
+        flex-direction: column !important;
+    }
+
+    .dj-midia-bloco {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        max-width: 260px !important;
+        margin-bottom: var(--espaco-xs) !important;
+    }
+
+    .dj-midia-bloco iframe {
+        width: 100%;
+        height: 110px;
+        margin-top: 8px;
+    }
+
+    .dj-texto-bloco {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+}
