@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         METADADOS GLOBAIS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Entre em contato com o Coletivo Tocaya para informações, parcerias e eventos culturais.">
+
+    <title>Contato - Tocaya</title>
+
+    <!-- Favicon global do projeto -->
+
+    <link rel="icon"
+          type="image/png"
+          href="imagens/icon-tocaya.png">
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+         Responsável por importar todos os módulos
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body id="topo">
+
+
+    <!-- =====================================================
+         CABEÇALHO GLOBAL
+    ====================================================== -->
+
+    <header
+        role="banner"
+        class="cabecalho-site"
+    >
+
+        <section class="container header-container">
+
+            <!-- Identidade visual -->
+
+            <section class="logo-container">
+
+                <img
+                    src="imagens/logo-tocaya.png"
+                    alt="Logotipo Tocaya"
+                    class="logo-imagem"
+                >
+
+                <p class="slogan">
+                    música & movimento
+                </p>
+
+            </section>
+
+            <!-- Navegação principal -->
+
+            <nav
+                class="navegacao-principal"
+                aria-label="Menu principal"
+            >
+
+                <ul class="menu-lista">
+
+                    <li class="menu-item">
+
+                        <a
+                            href="index.html"
+                            class="menu-link"
+                        >
+                            Início
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="sobre.html"
+                            class="menu-link"
+                        >
+                            Sobre
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="agenda.html"
+                            class="menu-link"
+                        >
+                            Agenda
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="projetos.html"
+                            class="menu-link"
+                        >
+                            Projetos
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="registros.html"
+                            class="menu-link"
+                        >
+                            Registros
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="midia.html"
+                            class="menu-link"
+                        >
+                            Mídia
+                        </a>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a
+                            href="contato.html"
+                            class="menu-link"
+                            aria-current="page"
+                        >
+                            Contato
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+         Formulário de contato
+         Venda de Camisetas
+    ====================================================== -->
+
+
+    <main class="conteudo-principal">
+
+        <!-- SEÇÃO 1: FORMULÁRIO DE CONTATO -->
+        <section class="contato-section">
+
+            <h1 style="text-align: center; margin-bottom: 5px;">Contato</h1>
+                        
+            <!-- 
+                REQUISITO 3: Formulário de Contato 
+                - 3 Campos: text, email e select
+                - 2 Botões: submit e reset
+            -->
+            <form class="formulario-contato">
+
+                <div class="campo-formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="parceria">Parcerias</option>
+                        <option value="convite">Convites</option>
+                        <option value="informacao">Informações</option>
+                        <option value="camiseta">Camisetas</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="botao-conhecer">
+                    Enviar
+                </button>
+
+                <button type="reset" class="botao-conhecer">
+                    Limpar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- SEÇÃO 2: VENDA DE CAMISETAS -->
+        <section id="secao-loja">
+
+            <h1 style="text-align: center; margin-bottom: 5px;">Camisetas - Preço Único: R$60,00</h1>
+            <p style="text-align: center; font-size: 0.95em; color: #666; margin-bottom: 25px;">Clique na imagem para ampliar</p>
+            
+            <!-- REQUISITO 4: Tabela -->
+            <table class="tabela-loja">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Imagens</th>
+                        <th>Cores Disponíveis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Modelo 1 -->
+                    <tr>
+                        <td style="font-weight: bold;">Camiseta Tocaya Clássica</td>
+                        <td>                        
+                            <a href="#pop-classica-preta">
+                                <img src="imagens/camisetas/classicapreta.jpg" alt="Camiseta Tocaya Clássica Preta" width="80" height="80" class="img-miniatura">
+                            </a>
+                            <a href="#pop-classica-cinza">
+                                <img src="imagens/camisetas/classicacinza.jpg" alt="Camiseta Tocaya Clássica Cinza" width="80" height="80" class="img-miniatura">
+                            </a>
+                        </td>
+                        <td>Preta / Cinza</td>
+                    </tr>
+                                       
+                    <!-- Modelo 2 -->
+                    <tr>
+                        <td style="font-weight: bold;">Camiseta Logo</td>
+                        <td>
+                            <a href="#pop-logo-preta">
+                                <img src="imagens/camisetas/logopreta.jpg" alt="Camiseta Logo Preta" width="80" height="80" class="img-miniatura">
+                            </a>
+                            <a href="#pop-logo-cinza">
+                                <img src="imagens/camisetas/logocinza.jpg" alt="Camiseta Logo Cinza" width="80" height="80" class="img-miniatura">
+                            </a>
+                        </td>
+                        <td>Preta / Cinza</td>
+                    </tr>
+
+                    <!-- Modelo 3 -->
+                    <tr>
+                        <td style="font-weight: bold;">Camiseta Raízes</td>
+                        <td>
+                            <a href="#pop-raizes-preta">
+                                <img src="imagens/camisetas/raizespreta.jpg" alt="Camiseta Raízes Preta" width="80" height="80" class="img-miniatura">
+                            </a>
+                            <a href="#pop-raizes-branca">
+                                <img src="imagens/camisetas/raizesbranca.jpg" alt="Camiseta Raízes Branca" width="80" height="80" class="img-miniatura">
+                            </a>
+                        </td>
+                        <td>Preta / Branca</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- =====================================================
+             ESTRUTURA DO CARROSSEL (POP-UPS LINKADOS)
+        ====================================================== -->
+        
+        <!-- Imagem 1 -->
+        <div id="pop-classica-preta" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Clássica Preta</h3>
+                <img src="imagens/camisetas/classicapreta.jpg" alt="Camiseta Clássica Preta" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-raizes-branca" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-classica-cinza" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 2 -->
+        <div id="pop-classica-cinza" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Clássica Cinza</h3>
+                <img src="imagens/camisetas/classicacinza.jpg" alt="Camiseta Clássica Cinza" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-classica-preta" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-logo-preta" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 3 -->
+        <div id="pop-logo-preta" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Logo Preta</h3>
+                <img src="imagens/camisetas/logopreta.jpg" alt="Camiseta Logo Preta" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-classica-cinza" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-logo-cinza" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 4 -->
+        <div id="pop-logo-cinza" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Logo Cinza</h3>
+                <img src="imagens/camisetas/logocinza.jpg" alt="Camiseta Logo Cinza" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-logo-preta" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-raizes-preta" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 5 -->
+        <div id="pop-raizes-preta" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Raízes Preta</h3>
+                <img src="imagens/camisetas/raizespreta.jpg" alt="Camiseta Raízes Preta" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-logo-cinza" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-raizes-branca" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem 6 -->
+        <div id="pop-raizes-branca" class="container-popup">
+            <div class="conteudo-popup">
+                <h3 style="margin-top: 0; font-family: sans-serif;">Raízes Branca</h3>
+                <img src="imagens/camisetas/raizesbranca.jpg" alt="Camiseta Raízes Branca" width="400" height="400" style="border-radius: 4px;">
+                <div class="controles-carrossel">
+                    <a href="#pop-raizes-preta" class="btn-carrossel">◀ Voltar</a>
+                    <a href="#secao-loja" class="btn-carrossel btn-fechar">Fechar ✕</a>
+                    <a href="#pop-classica-preta" class="btn-carrossel">Avançar ▶</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         VOLTAR AO TOPO
+    ====================================================== -->
+
+    <nav
+        class="voltar-topo-container"
+        aria-label="Voltar ao topo"
+    >
+
+        <a
+            href="#topo"
+            class="voltar-topo"
+        >
+            Voltar ao topo
+        </a>
+
+    </nav>
+
+    <!-- =====================================================
+         RODAPÉ GLOBAL
+    ====================================================== -->
+
+    <footer class="rodape-site">
+
+        <section class="rodape-creditos">
+
+            <p>
+                &copy; 2026 Coletivo Tocaya.
+                Todos os direitos reservados.
+            </p>
+
+            <p class="rodape-subtexto">
+                música & movimento
+            </p>
+
+        </section>
+
+        <nav
+            class="rodape-redes"
+            aria-label="Links para redes sociais"
+        >
+
+            <ul class="redes-lista">
+
+                <li>
+
+                    <a
+                        href="https://www.instagram.com/coletivotocaya"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a
+                        href="https://www.youtube.com/tocayatv"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YouTube
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a
+                        href="https://www.facebook.com/coletivotocaya"
+                        class="rede-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </footer>
+
+    <!-- =====================================================
+         VLIBRAS
+         Plugin de acessibilidade para Libras
+    ====================================================== -->
+
+    <div vw
+         class="enabled">
+
+        <div vw-access-button
+             class="active"></div>
+
+        <div vw-plugin-wrapper>
+
+            <div class="vw-plugin-top-wrapper"></div>
+
+        </div>
+
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget(
+            'https://vlibras.gov.br/app'
+        );
+    </script>
+
+</body>
+
+</html>
